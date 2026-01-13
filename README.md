@@ -1,4 +1,7 @@
 # Pandas Tutorial – From Basics to Data Manipulation 
+![Python](https://img.shields.io/badge/Python-blue?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-purple?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-green?style=flat-square&logo=numpy&logoColor=white)
 
 This repository serves as a hands-on Pandas workbook, designed to build strong data manipulation skills through clear, topic-wise Jupyter Notebooks.
 Each notebook focuses on commonly used Pandas operations encountered in data analysis tasks.
@@ -68,7 +71,7 @@ The content is organized in a step-by-step progression, ideal for beginners and 
 
 ---
 
-## 🛠 Requirements
+## Requirements
 - Python   
 - Pandas
 - NumPy
