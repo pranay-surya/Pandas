@@ -1,80 +1,137 @@
-# Pandas Tutorial – From Basics to Data Manipulation 
-![Python](https://img.shields.io/badge/Python-blue?style=flat-square&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-purple?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-green?style=flat-square&logo=numpy&logoColor=white)
+# Pandas Tutorial — From Basics to Data Manipulation
 
-This repository serves as a hands-on Pandas workbook, designed to build strong data manipulation skills through clear, topic-wise Jupyter Notebooks.
-Each notebook focuses on commonly used Pandas operations encountered in data analysis tasks.
-The content is organized in a step-by-step progression, ideal for beginners and learners revisiting Pandas concepts for analytics and ML workflows.
-
----
-
-##  Notebook Contents
-
-### 🔹 Pandas Basics
-- **01. Pandas - Series.ipynb**  
-  Introduction to Pandas Series, creation, indexing, and basic operations.
-
-- **02. Pandas - DataFrame.ipynb**  
-  DataFrame creation, structure, column operations, and basic analysis.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-2.x-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-1.x-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge)
 
 ---
 
-### 🔹 Data Importing
-- **03. Pandas - read_csv_basic.ipynb**  
-  Loading CSV files using `read_csv()` (basic usage).
+## Overview
 
-- **04. Pandas - read_csv_parameter.ipynb**  
-  Advanced `read_csv()` parameters such as `nrows`, `usecols`, `skiprows`, `index_col`, and `header`.
+This repository is a structured, topic-wise Pandas workbook built for learners who want to develop strong data manipulation skills through practical Jupyter Notebooks. Each notebook isolates a specific concept and demonstrates it through real usage patterns encountered in data analysis and machine learning workflows.
 
----
-
-### 🔹 Handling Missing Values
-- **05. Pandas - NAN value drop.ipynb**  
-  Removing missing values using `dropna()`.
-
-- **06. Pandas - fill NAN values.ipynb**  
-  Filling missing values using `fillna()` with different strategies.
-
-- **07. Pandas - replace.ipynb**  
-  Replacing values using the `replace()` method.
-
-- **08. Pandas - interpolate.ipynb**  
-  Handling missing values using interpolation methods.
+The content progresses from foundational data structures to advanced reshaping operations, making it suitable both for beginners getting started with Pandas and for practitioners looking to consolidate their understanding before applying it in analytics or ML pipelines.
 
 ---
 
-### 🔹 Data Selection
-- **09. Pandas - loc & iloc.ipynb**  
-  Data selection and slicing using `loc` and `iloc`.
+## Repository Structure
+
+```
+Pandas/
+|-- 01. Pandas - Series.ipynb
+|-- 02. Pandas - DataFrame.ipynb
+|-- 03. Pandas - read_csv_basic.ipynb
+|-- 04. Pandas - read_csv_parameter.ipynb
+|-- 05. Pandas - NAN value drop.ipynb
+|-- 06. Pandas - fill NAN values.ipynb
+|-- 07. Pandas - replace.ipynb
+|-- 08. Pandas - interpolate.ipynb
+|-- 09. Pandas - loc & iloc.ipynb
+|-- 10. Pandas - group by.ipynb
+|-- 11. Pandas - concat & join.ipynb
+|-- 12. Pandas - Pivot table.ipynb
+|-- 13. Pandas - melt function.ipynb
+|-- 14. Pandas - merge.ipynb
+|-- README.md
+```
 
 ---
 
-### 🔹 Data Aggregation
-- **10. Pandas - group by.ipynb**  
-  Grouping data and applying aggregation functions using `groupby()`.
+## Notebook Contents
+
+### Pandas Basics
+
+Covers the two primary data structures in Pandas — Series and DataFrame — which form the foundation of all further operations.
+
+| No. | Notebook | Key Concepts |
+|---|---|---|
+| 01 | Pandas Series | Creation, indexing, slicing, element-wise operations |
+| 02 | Pandas DataFrame | Construction, column access, structure inspection, basic analysis |
 
 ---
 
-### 🔹 Data Combination & Reshaping
-- **11. Pandas - concat & join.ipynb**  
-  Combining DataFrames using `concat()` and `join()`.
+### Data Importing
 
-- **12. Pandas - Pivot table.ipynb**  
-  Creating pivot tables for summarizing data.
+Focuses on reading external data into Pandas, with emphasis on the flexibility of `read_csv()` and its parameters.
 
-- **13. Pandas - melt function.ipynb**  
-  Converting wide-format data to long-format using `melt()`.
-
-- **14. Pandas - merge.ipynb**  
-  Merging DataFrames using `merge()` with different join types.
+| No. | Notebook | Key Concepts |
+|---|---|---|
+| 03 | read_csv — Basic | Loading CSV files, default behavior, DataFrame preview |
+| 04 | read_csv — Parameters | `nrows`, `usecols`, `skiprows`, `index_col`, `header`, `dtype` |
 
 ---
 
-## Requirements
-- Python   
-- Pandas
-- NumPy
-- Jupyter Notebook  
+### Handling Missing Values
 
- 
+Demonstrates the four primary strategies for dealing with missing or null data (`NaN`) in real-world datasets.
+
+| No. | Notebook | Key Concepts |
+|---|---|---|
+| 05 | dropna | Removing rows/columns with missing values, threshold control |
+| 06 | fillna | Forward fill, backward fill, constant fill, column-wise strategies |
+| 07 | replace | Substituting specific values or patterns across a DataFrame |
+| 08 | interpolate | Linear and index-based interpolation for sequential and time-series data |
+
+---
+
+### Data Selection
+
+Covers label-based and position-based indexing, which are essential for extracting subsets of data cleanly and efficiently.
+
+| No. | Notebook | Key Concepts |
+|---|---|---|
+| 09 | loc and iloc | Row/column selection by label (`loc`) and integer position (`iloc`), conditional filtering |
+
+---
+
+### Data Aggregation
+
+Introduces grouping and aggregation — core operations for summarizing datasets by category.
+
+| No. | Notebook | Key Concepts |
+|---|---|---|
+| 10 | groupby | Split-apply-combine pattern, aggregation functions (`sum`, `mean`, `count`, `agg`) |
+
+---
+
+### Data Combination and Reshaping
+
+Covers the methods used to combine multiple DataFrames and restructure data between wide and long formats.
+
+| No. | Notebook | Key Concepts |
+|---|---|---|
+| 11 | concat and join | Vertical/horizontal concatenation, index-based joining |
+| 12 | Pivot Table | Multi-level summarization, `aggfunc`, margins |
+| 13 | melt | Wide-to-long transformation, `id_vars`, `value_vars` |
+| 14 | merge | SQL-style joins — inner, left, right, outer — on keys and indexes |
+
+---
+
+## Prerequisites
+
+| Requirement | Version |
+|---|---|
+| Python | 3.8 or above |
+| Pandas | 1.5 or above |
+| NumPy | 1.21 or above |
+| Jupyter Notebook | Any recent version |
+
+---
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/pranay-surya/Pandas.git
+cd Pandas
+
+# Install dependencies
+pip install pandas numpy jupyter
+
+# Launch Jupyter Notebook
+jupyter notebook
+```
+
+---
